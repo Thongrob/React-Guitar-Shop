@@ -27,11 +27,13 @@ function Service() {
 
           {stores.map((store,index)=>(
             <div className='row ' key={index}>
-              <div className='col-sm-6 pt-3 pb-2 mb-5 bg-info'>
+              <div className='col-sm-6 pt-3 pb-2 mb-5 border border-secondary rounded bg-white text-dark'>
                 <h2>{store.brand}</h2>
                 <h5>{store.model}</h5>
                 <h6>{store.slug}</h6>
-            <button style={{borderRadius: 3}}>สั่งซื้อ</button>
+                <button className='rounded me-3 btn btn-outline-primary' >สั่งซื้อ</button>
+                <button className='rounded me-1 btn btn-outline-success'>อัปเดท</button>
+                <button className='rounded me-1 btn btn-outline-danger'>ลบ</button>
 
               </div>
             </div>  
