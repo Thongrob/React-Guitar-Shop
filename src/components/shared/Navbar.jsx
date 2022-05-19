@@ -34,7 +34,7 @@ function Navbar() {
             </li>
             <li className="nav-item dropdown">
                     <NavLink className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        จัดการรายการGU
+                        จัดการรายการสินค้า
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><NavLink className="dropdown-item" to="/insert">เพิ่มรายการ</NavLink></li>
