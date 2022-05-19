@@ -56,7 +56,7 @@ function Footer() {
               </div>
             </div> */}
             <div className="d-flex justify-content-between py-4 my-4 border-top">
-              <p> © 2022 Company, Inc. All rights reserved.</p>
+              <p> © 2022 Thongrob Company, Inc. All rights reserved.</p>
               <ul className="list-unstyled d-flex">
                 <li className="ms-3"><svg className="bi" width={24} height={24}><use xlinkHref="#twitter" /></svg></li>
                 <li className="ms-3"><svg className="bi" width={24} height={24}><use xlinkHref="#instagram" /></svg></li>

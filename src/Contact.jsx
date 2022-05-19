@@ -1,27 +1,19 @@
 import MainLayout from "./components/layouts/MainLayout";
 import DocumentTitle from "react-document-title";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-function Contact() {
+const Contact = ()=>{
   return (
     <MainLayout>
       <DocumentTitle title="ติดต่อเรา" />
       
       <div className="container mb-5">
         <h1 className="my-4">ติดต่อเรา</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, aut
-          omnis suscipit animi laborum fuga nostrum earum molestiae sequi iusto
-          cupiditate? Cupiditate magni debitis fugiat dolore odio ut, pariatur
-          nesciunt minima inventore molestias minus perferendis rem esse amet
-          illo officiis repudiandae voluptas quidem cumque aperiam iusto
-          corrupti nisi consectetur nemo. Molestias omnis adipisci maiores
-          accusamus eligendi numquam eaque aspernatur ex, nisi natus vero
-          laboriosam ut repellat a impedit, amet et consequuntur reiciendis.
-          Illum recusandae incidunt reiciendis veniam earum similique commodi,
-          voluptatem nulla illo ut quam, voluptate, quaerat rem ratione enim?
-          Quidem dignissimos sequi ipsa, consectetur nostrum sit obcaecati
-          voluptatum fugiat.
-        </p>
+        <p> <i class="bi bi-envelope"></i> thongrob.tsr@gmail.com</p>
+        <p> <i class="bi bi-telephone"></i> +66 2123 4567 </p>
+        <p><i class="bi bi-house"></i> Bangkok, Thailand</p>
+        
+        
       </div>
     </MainLayout>
   );
