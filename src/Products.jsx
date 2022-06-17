@@ -33,15 +33,15 @@ const Products = () => {
         {/* ทดสอบการ fetch ข้อมูลจาก api */}
         {/* {JSON.stringify(stores)} */}
 
-        {stores.map((store, index) => (
+        {stores.map((product, index) => (
           <div className="row " key={index}>
             <div className="col-sm-12 pt-3 pb-2 mb-5 border rounded bg-white text-dark">
-              <Link to={`/product/${store.slug}`}>
-              <h2>{store.brand}</h2>
+              <Link to={`/product/${product.slug}`}>
+              <h2>{product.brand}</h2>
               </Link>
-              <h5>{store.model}</h5>
-              <h6>{formatNumber(store.price)} บาท</h6>
-              <p className='text-muted'>Date :{new Date(store.createdAt).toLocaleString()}</p>
+              <h5>{product.model}</h5>
+              <h6>{formatNumber(product.price)} บาท</h6>
+              <p className='text-muted'>Date :{new Date(product.createdAt).toLocaleString()}</p>
               <button className="rounded me-3 btn btn-outline-primary">สั่งซื้อ</button>
             </div>
           </div>

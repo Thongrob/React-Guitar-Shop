@@ -15,8 +15,9 @@ const EditComponent = () => {
  
   //ดึงข้อมูลบทความที่ต้องแก้ไข
   useEffect(() => {
+    
     axios
-      .get(`${process.env.REACT_APP_API}/product/ibanezgrg170dx`)
+      .get(`${process.env.REACT_APP_API}/product/gibsonles-paul`)
       .then((response) => {
         // setState(response.data);
         // console.log(response.data)
@@ -27,6 +28,7 @@ const EditComponent = () => {
       .catch((err) => alert(err));
   }, []);
 
+  
   //ฟังก์ชัน form เพื่อนำมาแก้ไข
   const showUpdateForm = ()=>(
     <form onSubmit={submitForm}>
@@ -81,7 +83,8 @@ const EditComponent = () => {
       alert(err)
 
     })
-  };
+  }
+ 
   return (
     <MainLayout>
       <DocumentTitle title="เพิ่มข้อมูลสินค้า" />
